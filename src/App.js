@@ -1,24 +1,22 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import BookingForm from './components/BookingForm';
-import Notification from './components/Notification';
-import Reviews from './components/Reviews';
-import Profile from './components/Profile';
+// src/components/Header.jsx
+import React, { useState } from 'react';
 
-function App() {
+const Header = () => {
+  const [loggedIn, setLoggedIn] = useState(true); // Simulate login state
+
+  const handleLogout = () => {
+    setLoggedIn(false);
+    alert("Logged out!");
+  };
+
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <BookingForm />
-      <Notification />
-      <Reviews />
-      <Profile />
-      <Footer />
-    </div>
+    <header>
+      <h1>StayHealthy</h1>
+      {loggedIn && (
+        <button onClick={handleLogout}>Logout</button>
+      )}
+    </header>
   );
-}
+};
 
-export default App;
+export default Header;
