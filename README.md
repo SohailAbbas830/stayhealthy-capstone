@@ -24,4 +24,4 @@ Deployed on Vercel / Netlify (Add your link here)
 See `/screenshots/` folder in the repo
 
 ## 🪪 License
-MIT
+MIT"# stayhealthy-capstone" 
