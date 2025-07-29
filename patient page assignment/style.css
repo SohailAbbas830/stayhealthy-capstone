@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.icon {
+  color: #4f8ef7;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+#logout {
+  padding: 6px 14px;
+  border: 1px solid #4f8ef7;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #4f8ef7;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#logout:hover {
+  background-color: #4f8ef7;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.black {
+  color: #000;
+  font-weight: 700;
+}
+
+.gradient {
+  background: linear-gradient(to right, #4f8ef7, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.tagline {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #666;
+}
+
+.toggle-theme {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #4f8ef7;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #f2f2f2;
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+}
+
+body.dark nav a {
+  color: #f2f2f2;
+}
+
+body.dark #logout {
+  border-color: #aaa;
+  color: #aaa;
+}
+
+body.dark #logout:hover {
+  background-color: #aaa;
+  color: #1e1e1e;
+}

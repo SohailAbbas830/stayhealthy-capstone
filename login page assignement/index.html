@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="signupForm">
+      <h2>Sign up as a Patient</h2>
+      <p>Already a member? <a href="#">Login</a></p>
+
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option value="Patient">Patient</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Admin">Admin</option>
+      </select>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <p class="error" id="nameError"></p>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+      <p class="error" id="phoneError"></p>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter email">
+      <p class="error" id="emailError"></p>
+
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <span id="togglePassword" class="eye">👁️</span>
+      </div>
+      <p class="error" id="passwordError"></p>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
